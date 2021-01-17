@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas de sensores</title>
-</head>
-<body>
-    <h1>Tablas sensores</h1>
-    
-</body>
-</html>
+{% raw %}
+  {% extends "base.html" %}
+  {% block content %}
+  <h2>Personas</h2>
+<em>Persona - DNI</em>
+<ul>
+    {% for persona in object_list %}
+      <li>{{ persona.nombre }} - {{ persona.dni }} </li>
+    {% endfor %}
+  </ul>
+  {% endblock %}
+{% endraw %}
