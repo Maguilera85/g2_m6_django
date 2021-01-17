@@ -24,4 +24,5 @@ class NivelGasolina(models.Model):
 
 class CodigosNumericos(models.Model):
     nombre = models.CharField(max_length=50)
-    
+    fecha = models.DateTimeField(auto_now_add = True)
+    observacion = models.CharField(max_length=100)
